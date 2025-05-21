@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+/* Media Query for Tablets and Small Screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem; /* Slightly reduce base font size */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 90%; /* Reduce heading sizes */
+  }
+  
+  p {
+    line-height: 1.5; /* Increase line height for better readability */
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.8rem; /* Further reduce base font size */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 80%; /* Further reduce heading sizes */
+  }
+  
+  p {
+    line-height: 1.4; /* Slightly increase line height for readability */
+    margin: 10px 0; /* Add margin for paragraphs */
+  }
+
+  * {
+    padding: 5px; /* Add some padding for smaller screens */
+  }
+}

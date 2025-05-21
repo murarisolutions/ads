@@ -1,0 +1,19 @@
+node_modules/
+.cache/
+*.exe
+node_modules/
+.cache/
+node_modules/
+.cache/
+*.exe
+*.mp4
+*.zip
+*.pdf
+*.psd
+*.pack_
+
+# Ignore all .log files
+*.log
+
+# Ignore the temp directory
+temp/

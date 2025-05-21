@@ -1,0 +1,367 @@
+/* General Styles */
+body {
+    background-color: #abd8e0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Video */
+.background-video {
+    position: fixed;
+    background-repeat: repeat-x ;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+    pointer-events: none; /* Prevents interaction with the video */
+}
+
+.main1 {
+    padding: 2rem;
+    width: 100%;
+}
+
+.hero1 {
+    background-color: rgba(255, 255, 255, 0.6); 
+    color: #000000; 
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.hero1 h1 {
+    font-size: 2rem;
+}
+
+.hero1 span {
+    color: #000000; 
+}
+
+.cards1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+
+
+  
+  /* Card Styles */
+  .card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+  }
+  
+  .card a {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  /* Transparent Card Styles */
+  .transparent-card {
+    background: rgba(78, 197, 212, 0.486);
+    backdrop-filter: blur(10px);
+    border: floralwhite;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(116, 2, 2, 0.781);
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    width: 300px; 
+    height: 200px; 
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .transparent-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .transparent-card-header,
+  .transparent-card-content,
+  .transparent-card-footer {
+    padding: 0.5rem;
+  }
+  
+  .transparent-card-header {
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .transparent-card-content {
+    flex-grow: 1;
+    margin: 0.5rem 0;
+  }
+  
+  .transparent-card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  
+  .transparent-card .btn-primary {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    padding: 0.5rem 1rem; 
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .transparent-card .btn-primary:hover {
+    background-color: rgb(244, 249, 253);
+    color: black;
+  }
+  
+  .financial-services {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: rgba(255, 255, 255, 0.8); 
+  }
+  
+  .financial-services h1 {
+    font-size: 2rem;
+  }
+  
+  .financial-services span {
+    color: #0f12c2; 
+  }
+  
+  
+  .form-container {
+    background: rgba(146, 218, 218, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .consultation-form h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .consultation-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .consultation-form label {
+    margin-top: 1rem;
+  }
+  
+  .consultation-form input,
+  .consultation-form textarea {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  .consultation-form .submit-btn {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .consultation-form .submit-btn:hover {
+    background-color: rgb(244, 249, 253);
+    color: black;
+  }
+  
+  .advisor {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .advisor img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .advisor p {
+    margin-top: 0.5rem;
+  }
+  
+  .advisor button {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    border: none;
+    padding: 0.5rem 0.5rem; 
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 0rem;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto; 
+  }
+  
+  .advisor button:hover {
+    background-color: rgb(244, 249, 253);
+    color: black;
+  }
+  
+  .go-back-btn {
+    background-color: #000000; /* Black background color */
+    border: none;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+    color: rgb(240, 240, 240); /* Light text color */
+    cursor: pointer;
+    margin-top: 0rem;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+  }
+  
+  .go-back-btn:hover {
+    background-color: #fdfeff; /* Lighter background color on hover */
+    color: #000a11; /* Darker text color on hover */
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1200px) {
+    .main {
+      padding: 1.5rem;
+    }
+  
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+  
+    .cards {
+      gap: 1.5rem;
+    }
+  
+    .card {
+      width: 250px;
+      height: 150px;
+    }
+  
+    .transparent-card {
+      width: 250px;
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .hero h1 {
+      font-size: 1.6rem;
+    }
+  
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card, .transparent-card {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+    }
+  
+    .form-container {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 1.4rem;
+    }
+  
+    .financial-services h1 {
+      font-size: 1.6rem;
+    }
+  
+    .form-container {
+      padding: 1.5rem;
+      max-width: 90%;
+    }
+    
+    .advisor img {
+      width: 80px;
+      height: 80px;
+    }
+    
+    .go-back-btn {
+      padding: 0.4rem 0.4rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    body {
+      font-size: 0.9rem;
+    }
+  
+    .hero h1 {
+      font-size: 1.2rem;
+    }
+  
+    .financial-services h1 {
+      font-size: 1.4rem;
+    }
+  
+    .card, .transparent-card {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+  
+    .form-container {
+      padding: 1rem;
+      max-width: 95%;
+    }
+  }
+  
+  

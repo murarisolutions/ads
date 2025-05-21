@@ -1,0 +1,127 @@
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 15px 0; /* Reduced padding for a compact look */
+    font-size: 14px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Left Section: DSC Above Taxes */
+.left-section {
+    flex: 1;
+    text-align: left;
+    min-width: 250px;
+}
+
+/* Footer Sections */
+.footer-section {
+    margin-bottom: 10px; /* Reduced spacing */
+}
+
+/* Section Titles */
+.footer-section h4 {
+    font-size: 16px;
+    color: #f9f9f9;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+/* List Styling */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 4px; /* Reduced spacing */
+    font-size: 13px;
+    color: #ccc;
+}
+
+/* Social Media Icons */
+.social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+/* WhatsApp & Email Icons */
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Smaller icons */
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* WhatsApp Icon */
+.whatsapp-icon {
+    background-color: #25D366;
+}
+
+.whatsapp-icon:hover {
+    background-color: #1ebe5d;
+}
+
+/* Email Icon */
+.email-icon {
+    background-color: #D14836;
+}
+
+.email-icon:hover {
+    background-color: #b13629;
+}
+
+/* MUI Icon Styling */
+.icon {
+    font-size: 22px !important;
+    color: white;
+}
+
+/* Location Styling */
+.location {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #ddd;
+}
+
+/* Copyrights Inside Footer */
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+    padding-top: 5px;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-section {
+        text-align: center;
+    }
+
+    .social {
+        justify-content: center;
+    }
+}

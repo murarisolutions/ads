@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "main",
+			"path": ".."
+		},
+		{
+			"name": "projectms",
+			"path": "../../../Final Ms/projectms"
+		}
+	],
+	"settings": {}
+}

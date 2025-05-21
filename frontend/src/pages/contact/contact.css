@@ -1,0 +1,140 @@
+
+
+.contact-page {
+    background-color: #003b4636; 
+        padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-header {
+    background-color: #212529;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.contact-header h1 {
+    color: #ff7f00; /* Orange color */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    color: #ffffff;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-card {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    text-align: left;
+}
+
+.contact-icon {
+    color: #ff7f00; /* Orange color */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-card h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-card p {
+    font-size: 1em;
+    color: #333;
+}
+
+.contact-card a {
+    color: #ff7f00; /* Orange color */
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.contact-map {
+    margin-top: 20px;
+}
+
+.map-iframe {
+    width: 100%; /* Full width */
+    height: 300px; /* Fixed height */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 20px; /* Space above the map */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.office-timings {
+    background-color: #fff7e6; /* Light orange background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding around content */
+    margin: 20px auto; /* Centered with spacing */
+    max-width: 400px; /* Max width for responsiveness */
+    text-align: center; /* Center-align text */
+}
+
+.office-timings h2 {
+    color: #ff6600; /* Darker orange */
+    font-size: 1.2em; /* Increased font size */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center icon with text */
+    justify-content: center; /* Center heading */
+    gap: 10px; /* Space between icon and text */
+    margin-bottom: 15px; /* Margin below heading */
+}
+
+.office-timings p {
+    color: #333; /* Dark text */
+    font-size: 1.1em; /* Font size for text */
+    margin: 5px 0; /* Margin around paragraphs */
+}
+
+.timings-icon {
+    color: #ff6600; /* Orange color */
+    font-size: 1.5em; /* Icon size */
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-btn {
+    background-color: #000000; /* Black background color */
+    border: none;
+    padding: 0.5rem 1rem; /* Adjust padding */
+    border-radius: 10px;
+    color: rgb(240, 240, 240); /* Light text color */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+.back-btn:hover {
+    background-color: #bbd5ee; /* Lighter background color on hover */
+    color: #000a11; /* Darker text color on hover */
+}

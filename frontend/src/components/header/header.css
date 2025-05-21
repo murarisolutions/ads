@@ -1,0 +1,207 @@
+/* General header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 30px;
+  }
+  
+  /* Navigation links styles */
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem; /* Add padding to create space for the floating effect */
+    transition: all 0.3s ease; /* Smooth transition for effects */
+    position: relative; /* Ensure that the pseudo-element is positioned correctly */
+  }
+  
+  /* Floating effect for active link */
+  nav ul li a.active {
+    background-color: #f0f0f0; /* Light background */
+    color: #007bff; /* Text color for the active link */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Floating shadow effect */
+    transform: translateY(-3px); /* Lift the link slightly */
+  }
+  
+  /* Rotate only the icon on hover */
+  nav ul li a .nav-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    margin-right: 0.5rem; /* Space between icon and text */
+  }
+  
+  /* Rotate only the icon on hover */
+  nav ul li a:hover .nav-icon {
+    transform: rotate(360deg);
+  }
+  
+  /* Text color change on hover */
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* CTA button and section styles */
+  .cta-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cta-button {
+    position: relative;
+  }
+  
+  .cta-button button {
+    background-color: #1d5772;
+    color: white;
+    border: 4px solid #004c6c;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button button:hover {
+    background-color: #0edb4c;
+    border-color: rgb(105, 243, 92);
+  }
+  
+  .cta-button .cta-icon {
+    margin-left: 0.8rem;
+  }
+  
+  .contact-icons {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #0da8bd;
+    border: 1px solid #fff0f0;
+    border-radius: 5px;
+    padding: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .contact-icons.show {
+    display: flex;
+  }
+  
+  .contact-icons a {
+    text-decoration: none;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2); /* Enlarge icon slightly on hover */
+  }
+  
+  .icon.BsWhatsapp {
+    color: #25D366;
+  }
+  
+  .icon.EmailIcon {
+    color: #EA4335;
+  }
+  
+  .logo-image {
+    height: 70px;
+    width: 70px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul li {
+      margin: 15px 0;
+    }
+  
+    .cta-section {
+      margin-top: 10px;
+      width: 100%;
+      justify-content: flex-start;
+    }
+  
+    .cta-button button {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .user-icon {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      padding: 5px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .cta-section {
+      margin-top: 5px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .cta-button button {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .user-icon {
+      margin-left: 0;
+      margin-top: 5px;
+    }
+  
+    .logo-image {
+      height: 50px;
+      width: 50px;
+    }
+  }
+  

@@ -1,0 +1,296 @@
+.consulting-page {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.consulting-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.consulting-header h1 {
+    color: #333;
+}
+
+.consulting-main {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.consulting-info {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    text-align: center; /* Center text within the div */
+}
+
+.consulting-text {
+    flex: 2;
+    margin-bottom: 1px;
+    max-width: 900px;
+    font-size: 19px; /* Larger font size for the sentences */
+    line-height: 2;
+    justify-content: center;
+    color: #333;
+    text-align: left; /* Center the text */
+}
+
+.phone-frame {
+    flex: none;
+    position: relative;
+    width: 320px;
+    height: 640px;
+    border: 16px solid #333;
+    border-radius: 36px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
+
+.phone-frame::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 60px;
+    height: 6px;
+    background-color: #333;
+    border-radius: 0px;
+    transform: translateX(-50%);
+}
+
+.phone-screen {
+    padding: 20px;
+    height: calc(100% - 40px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* New Card Styling */
+.card {
+    background-color: #fd2e2e;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+}
+
+.contact-form {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-form h2 {
+    margin-bottom: 40px;
+    color: darkslategrey;
+}
+
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.accept-label {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.accept-label input {
+    margin-right: 10px;
+}
+
+.submit-btn {
+    padding: 9px 21px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3b61ca;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.submit-btn:hover {
+    background-color: #031407;
+}
+
+.advisor {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #47549c;
+    border: none;
+    border-radius: 9.8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #2f86dd;
+}
+
+.accept-label {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.accept-label input {
+    margin-right: 10px;
+}
+
+/* Media Queries */
+
+/* Large screens (desktops, laptops) */
+@media (max-width: 1200px) {
+    .consulting-text {
+        font-size: 18px;
+    }
+
+    .phone-frame {
+        width: 300px;
+        height: 600px;
+    }
+}
+
+/* Tablets and small desktops */
+@media (max-width: 768px) {
+    .consulting-main {
+        flex-direction: column;
+    }
+
+    .consulting-text {
+        font-size: 17px;
+    }
+
+    .phone-frame {
+        width: 280px;
+        height: 560px;
+    }
+
+    .submit-btn, .back-btn {
+        padding: 8px 16px;
+        font-size: 15px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .consulting-header h1 {
+        font-size: 1.5em;
+    }
+
+    .consulting-text {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .phone-frame {
+        width: 240px;
+        height: 480px;
+    }
+
+    .submit-btn, .back-btn {
+        font-size: 14px;
+        padding: 7px 14px;
+    }
+}
+.consulting-page {
+    background-color: rgb(227, 238, 238);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+/* Button Styling */
+.submit-btn {
+    padding: 7px 14px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #3b61ca;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative; /* For spinner positioning */
+}
+
+.submit-btn:hover {
+    background-color: #2f86dd;
+}
+
+/* Loading Spinner Styling */
+.loading-spinner {
+    border: 3px solid #ffffff; /* Light grey background */
+    border-top: 3px solid #000000; /* Blue color */
+    border-radius: 100%;
+    width: 20px;
+    padding: 4px 4px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    position: relative; /* Centering spinner inside the button */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Spinner Animation */
+@keyframes spin {
+    0% { transform: rotate(90deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Error and Success Message Styling */
+.error-message, .success-message {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}

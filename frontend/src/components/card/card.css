@@ -1,0 +1,111 @@
+/* Card.css */
+
+.service-card {
+    background-color: #e3f2fd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon-container {
+    font-size: 3rem;
+    color: #1a73e8;
+    margin-bottom: 10px;
+  }
+  
+  .service-card .MuiTypography-h5 {
+    margin: 10px 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .service-card .MuiTypography-body2 {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .service-card .MuiButton-containedPrimary {
+    background-color: #1a73e8;
+  }
+  
+  .service-card .MuiButton-containedPrimary:hover {
+    background-color: #1559b3;
+  }
+  
+  /* Media Queries */
+  
+  /* Tablets and smaller desktops */
+  @media (max-width: 1024px) {
+    .icon-container {
+      font-size: 2.75rem;
+    }
+  
+    .service-card .MuiTypography-h5 {
+      font-size: 1.125rem;
+    }
+  
+    .service-card .MuiTypography-body2 {
+      font-size: 0.95rem;
+    }
+  
+    .service-card .MuiButton-containedPrimary {
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* Small screens and mobile devices */
+  @media (max-width: 768px) {
+    .service-card {
+      padding: 15px;
+    }
+  
+    .icon-container {
+      font-size: 2.5rem;
+    }
+  
+    .service-card .MuiTypography-h5 {
+      font-size: 1rem;
+    }
+  
+    .service-card .MuiTypography-body2 {
+      font-size: 0.875rem;
+    }
+  
+    .service-card .MuiButton-containedPrimary {
+      font-size: 0.875rem;
+    }
+  }
+  
+  /* Very small screens (phones) */
+  @media (max-width: 480px) {
+    .service-card {
+      padding: 10px;
+    }
+  
+    .icon-container {
+      font-size: 2rem;
+    }
+  
+    .service-card .MuiTypography-h5 {
+      font-size: 0.875rem;
+    }
+  
+    .service-card .MuiTypography-body2 {
+      font-size: 0.75rem;
+    }
+  
+    .service-card .MuiButton-containedPrimary {
+      font-size: 0.75rem;
+    }
+  }
+  

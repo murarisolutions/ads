@@ -1,0 +1,85 @@
+/* Container Styling */
+.verification-container {
+    width: 60%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 12px;
+    background: #f1f3f6;
+    box-shadow: 6px 6px 12px #c8d0e7, -6px -6px 12px #ffffff;
+    text-align: center;
+}
+
+/* Step Box Styling */
+.step-box {
+    background: #ffffff;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #c8d0e7, -5px -5px 10px #ffffff;
+    text-align: left;
+}
+
+/* Icons for Steps */
+.step-icon {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+/* Headings */
+h1 {
+    font-size: 26px;
+    color: #222;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+/* List Styling */
+ul, ol {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #444;
+}
+
+/* Neomorphic Button */
+.verify-button {
+    margin-top: 20px;
+    padding: 12px 22px;
+    background: #f1f3f6;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 5px 5px 10px #c8d0e7, -5px -5px 10px #ffffff;
+}
+
+.verify-button:hover {
+    box-shadow: inset 3px 3px 6px #c8d0e7, inset -3px -3px 6px #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .verification-container {
+        width: 90%;
+        padding: 18px;
+    }
+
+    .step-box {
+        padding: 10px;
+    }
+
+    .verify-button {
+        width: 100%;
+    }
+}

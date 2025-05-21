@@ -1,0 +1,144 @@
+/* Basic page styling */
+.dsc-detail-page {
+    font-family: Arial, sans-serif;
+    background-color: rgb(227, 238, 238);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.dsc-detail-page h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Paragraph and list styling */
+.dsc-detail-page p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.dsc-detail-page ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.dsc-detail-page li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Form styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Checkbox and label styling */
+.accept-label {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.accept-label input {
+    margin-right: 10px;
+}
+
+/* Button styling */
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #3b61ca;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2f86dd;
+}
+
+/* Back button styling */
+.advisor {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #47549c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #2f86dd;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .dsc-detail-page {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .submit-btn,
+    .back-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dsc-detail-page h1 {
+        font-size: 1.5em;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 13px;
+    }
+}
